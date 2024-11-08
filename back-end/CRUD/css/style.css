@@ -1,0 +1,123 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+   
+}
+
+/* Título Principal */
+h1 {
+    font-size: 2.5rem;
+    color: #e67e22; /* Laranja */
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Formulário de Adição de Termo */
+form {
+    margin-top: 30px;
+}
+
+.form-label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #555;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Botão de Enviar */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: #e67e22; /* Laranja */
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #d35400; /* Laranja mais escuro */
+}
+
+/* Botão Voltar */
+.btn-voltar {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    color: #e67e22;
+    cursor: pointer;
+}
+
+
+/* Alertas */
+.alert {
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+/* Sucesso */
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Erro */
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .form-label {
+        font-size: 1rem;
+    }
+
+    input[type="text"], textarea {
+        font-size: 1rem;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+    }
+
+    .btn-voltar {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,127 @@
+/* Estilo geral */
+html, body {
+    height: 100%; /* Para garantir que a altura ocupe toda a tela */
+    margin: 0; /* Remove margens padrão */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Corpo da página */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff8f1;
+
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ff6600 !important; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn-laranja {
+    background-color: #ff6600;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-laranja:hover {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+#a-login {
+    color: #ff6600;
+}
+/* .navbar-brand {
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+} */
+
+/* Cards */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ff6600; /* Laranja ao passar o mouse */
+}
+
+/* Card Header */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ff6600; /* Laranja forte para o título */
+}
+
+.card-body {
+    padding: 20px;
+    color: #333;
+}
+
+/* Sidebar */
+.list-group {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.list-group h5 {
+    margin-bottom: 1rem;
+}
+
+/* Form Select */
+.form-select {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ff6600; /* Borda laranja */
+}
+
+.form-select:focus {
+    border-color: #ff4500; /* Laranja mais forte no foco */
+}
+
+/* Rodapé */
+footer {
+    background-color: #ff6600; /* Laranja forte */
+    color: white;
+    padding: 20px 0;
+    font-size: 0.875rem;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: auto; /* Empurra o footer para o final da página */
+}
+#backToTopBtn {
+    display: none; /* Esconde o botão inicialmente */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #ff4500;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+#backToTopBtn:hover {
+    background-color: #e03900;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+}
